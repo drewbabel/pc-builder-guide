@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete PC Building Guide - Master Your Build</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700;800;900&family=SF+Pro+Text:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Enhanced Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Enhanced Navigation -->
+    <nav class="premium-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-link active">Overview</a>
+            <a href="#cpu" class="nav-link">CPU Guide</a>
+            <a href="#gpu" class="nav-link">GPU Guide</a>
+            <a href="#cooling" class="nav-link">Cooling</a>
+            <a href="#analyzer" class="nav-link">Analyzer</a>
+        </div>
+    </nav>
+
+    <!-- Educational Overview Hero Section -->
+    <section id="hero" class="hero">
+        <!-- Particle Background System -->
+        <div class="particles-background">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="hero-container">
+            <h1 class="hero-title">Master PC Building</h1>
+            <p class="hero-subtitle">Your Complete Guide to Building a Custom PC from Scratch</p>
+            
+            <!-- PC Building Overview -->
+            <div class="pc-overview">
+                <div class="overview-intro">
+                    <h2 class="overview-title">Essential Components You'll Need</h2>
+                    <p class="overview-description">
+                        Building a PC requires 8 essential components that work together to create your custom machine. 
+                        Each component serves a specific purpose and understanding their roles is crucial for a successful build.
+                    </p>
+                </div>
+
+                <div class="components-grid">
+                    <div class="component-overview" data-component="cpu">
+                        <div class="component-icon">🧠</div>
+                        <h3>CPU (Processor)</h3>
+                        <p>The brain of your computer that executes all instructions</p>
+                        <div class="component-details">
+                            <span class="detail-item">Cores & Threads</span>
+                            <span class="detail-item">Clock Speed</span>
+                            <span class="detail-item">Cache Memory</span>
+                        </div>
+                    </div>
+
+                    <div class="component-overview" data-component="motherboard">
+                        <div class="component-icon">🔌</div>
+                        <h3>Motherboard</h3>
+                        <p>Connects all components together and provides expansion slots</p>
+                        <div class="component-details">
+                            <span class="detail-item">CPU Socket</span>
+                            <span class="detail-item">RAM Slots</span>
+                            <span class="detail-item">PCIe Slots</span>
+                        </div>
+                    </div>
+
+                    <div class="component-overview" data-component="gpu">
+                        <div class="component-icon">🎮</div>
+                        <h3>GPU (Graphics Card)</h3>
+                        <p>Renders graphics and accelerates visual processing</p>
+                        <div class="component-details">
+                            <span class="detail-item">VRAM</span>
+                            <span class="detail-item">CUDA/Stream Cores</span>
+                            <span class="detail-item">Ray Tracing</span>
+                        </div>
+                    </div>
+
+                    <div class="component-overview" data-component="ram">
+                        <div class="component-icon">⚡</div>
+                        <h3>RAM (Memory)</h3>
+                        <p>Temporary storage for active programs and data</p>
+                        <div class="component-details">
+                            <span class="detail-item">Capacity</span>
+                            <span class="detail-item">Speed (MHz)</span>
+                            <span class="detail-item">Latency Timings</span>
+                        </div>
+                    </div>
+
+                    <div class="component-overview" data-component="storage">
+                        <div class="component-icon">💾</div>
+                        <h3>Storage</h3>
+                        <p>Permanent storage for your operating system and files</p>
+                        <div class="component-details">
+                            <span class="detail-item">SSD vs HDD</span>
+                            <span class="detail-item">NVMe vs SATA</span>
+                            <span class="detail-item">Read/Write Speed</span>
+                        </div>
+                    </div>
+
+                    <div class="component-overview" data-component="cooling">
+                        <div class="component-icon">❄️</div>
+                        <h3>Cooling System</h3>
+                        <p>Keeps components at safe operating temperatures</p>
+                        <div class="component-details">
+                            <span class="detail-item">Air vs Liquid</span>
+                            <span class="detail-item">TDP Rating</span>
+                            <span class="detail-item">Noise Levels</span>
+                        </div>
+                    </div>
+
+                    <div class="component-overview" data-component="psu">
+                        <div class="component-icon">⚡</div>
+                        <h3>Power Supply (PSU)</h3>
+                        <p>Converts AC power to DC and powers all components</p>
+                        <div class="component-details">
+                            <span class="detail-item">Wattage</span>
+                            <span class="detail-item">Efficiency Rating</span>
+                            <span class="detail-item">Modular Cables</span>
+                        </div>
+                    </div>
+
+                    <div class="component-overview" data-component="case">
+                        <div class="component-icon">📦</div>
+                        <h3>PC Case</h3>
+                        <p>Houses and protects all components while providing airflow</p>
+                        <div class="component-details">
+                            <span class="detail-item">Size (ATX, mATX)</span>
+                            <span class="detail-item">Airflow Design</span>
+                            <span class="detail-item">Expansion Slots</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="build-process">
+                    <h3>The Building Process</h3>
+                    <div class="process-steps">
+                        <div class="step-item expandable-step" data-step="1">
+                            <div class="step-header">
+                                <span class="step-number">1</span>
+                                <div class="step-content">
+                                    <h4>Plan Your Build</h4>
+                                    <p>Determine your budget, use case, and performance requirements</p>
+                                </div>
+                                <div class="expand-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="step-microsteps">
+                                <div class="microstep">
+                                    <span class="microstep-number">1.1</span>
+                                    <div class="microstep-content">
+                                        <h5>Set Your Budget</h5>
+                                        <p>Decide total budget: $500-800 (budget), $800-1500 (mid-range), $1500+ (high-end)</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">1.2</span>
+                                    <div class="microstep-content">
+                                        <h5>Define Use Case</h5>
+                                        <p>Gaming, content creation, office work, or mixed usage determines component priorities</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">1.3</span>
+                                    <div class="microstep-content">
+                                        <h5>Choose Target Resolution</h5>
+                                        <p>1080p (budget-friendly), 1440p (sweet spot), or 4K (premium) affects GPU requirements</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">1.4</span>
+                                    <div class="microstep-content">
+                                        <h5>Research Compatibility</h5>
+                                        <p>Use PCPartPicker or similar tools to verify all components work together</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-item expandable-step" data-step="2">
+                            <div class="step-header">
+                                <span class="step-number">2</span>
+                                <div class="step-content">
+                                    <h4>Select Compatible Parts</h4>
+                                    <p>Ensure CPU, motherboard, and RAM compatibility</p>
+                                </div>
+                                <div class="expand-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="step-microsteps">
+                                <div class="microstep">
+                                    <span class="microstep-number">2.1</span>
+                                    <div class="microstep-content">
+                                        <h5>Choose CPU First</h5>
+                                        <p>Select Intel or AMD processor based on budget and use case requirements</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">2.2</span>
+                                    <div class="microstep-content">
+                                        <h5>Match Motherboard Socket</h5>
+                                        <p>Ensure motherboard supports your CPU socket (LGA1700, AM5, etc.)</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">2.3</span>
+                                    <div class="microstep-content">
+                                        <h5>Select Compatible RAM</h5>
+                                        <p>Choose DDR4 or DDR5 based on motherboard support, aim for 16-32GB</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">2.4</span>
+                                    <div class="microstep-content">
+                                        <h5>Check Power Requirements</h5>
+                                        <p>Calculate total system power draw and add 20% headroom for PSU selection</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">2.5</span>
+                                    <div class="microstep-content">
+                                        <h5>Verify Case Clearances</h5>
+                                        <p>Ensure GPU length, CPU cooler height, and PSU size fit in chosen case</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-item expandable-step" data-step="3">
+                            <div class="step-header">
+                                <span class="step-number">3</span>
+                                <div class="step-content">
+                                    <h4>Prepare Your Workspace</h4>
+                                    <p>Anti-static wrist strap, good lighting, and clean surface</p>
+                                </div>
+                                <div class="expand-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="step-microsteps">
+                                <div class="microstep">
+                                    <span class="microstep-number">3.1</span>
+                                    <div class="microstep-content">
+                                        <h5>Gather Tools</h5>
+                                        <p>Phillips head screwdriver, anti-static wrist strap, zip ties for cable management</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">3.2</span>
+                                    <div class="microstep-content">
+                                        <h5>Prepare Work Area</h5>
+                                        <p>Clear, well-lit space with good ventilation. Avoid carpeted areas if possible</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">3.3</span>
+                                    <div class="microstep-content">
+                                        <h5>Organize Components</h5>
+                                        <p>Unbox all parts, keep them in anti-static bags until needed, organize screws</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">3.4</span>
+                                    <div class="microstep-content">
+                                        <h5>Ground Yourself</h5>
+                                        <p>Touch metal case or use anti-static wrist strap to prevent ESD damage</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-item expandable-step" data-step="4">
+                            <div class="step-header">
+                                <span class="step-number">4</span>
+                                <div class="step-content">
+                                    <h4>Install Components</h4>
+                                    <p>CPU, RAM, storage, then mount motherboard in case</p>
+                                </div>
+                                <div class="expand-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="step-microsteps">
+                                <div class="microstep">
+                                    <span class="microstep-number">4.1</span>
+                                    <div class="microstep-content">
+                                        <h5>Install CPU</h5>
+                                        <p>Open socket, align CPU (never force), close retention bracket. Handle only by edges</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">4.2</span>
+                                    <div class="microstep-content">
+                                        <h5>Install RAM</h5>
+                                        <p>Open clips, align notch, press firmly until clicks. Use slots 2 & 4 for dual-channel</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">4.3</span>
+                                    <div class="microstep-content">
+                                        <h5>Install M.2 Storage</h5>
+                                        <p>Insert at 30° angle, press down, secure with mounting screw. Remove thermal pad if needed</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">4.4</span>
+                                    <div class="microstep-content">
+                                        <h5>Install CPU Cooler</h5>
+                                        <p>Apply thermal paste (rice grain size), mount cooler, connect fan cable to CPU_FAN header</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">4.5</span>
+                                    <div class="microstep-content">
+                                        <h5>Install I/O Shield & Motherboard</h5>
+                                        <p>Snap I/O shield into case, align motherboard with standoffs, secure with screws</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">4.6</span>
+                                    <div class="microstep-content">
+                                        <h5>Install GPU & PSU</h5>
+                                        <p>Mount PSU fan-down if case has ventilation, install GPU in top PCIe x16 slot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step-item expandable-step" data-step="5">
+                            <div class="step-header">
+                                <span class="step-number">5</span>
+                                <div class="step-content">
+                                    <h4>Connect & Test</h4>
+                                    <p>Power cables, data cables, then first boot test</p>
+                                </div>
+                                <div class="expand-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="step-microsteps">
+                                <div class="microstep">
+                                    <span class="microstep-number">5.1</span>
+                                    <div class="microstep-content">
+                                        <h5>Connect Power Cables</h5>
+                                        <p>24-pin motherboard, 8-pin CPU, PCIe GPU power, SATA for drives</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">5.2</span>
+                                    <div class="microstep-content">
+                                        <h5>Connect Front Panel</h5>
+                                        <p>Power button, reset, LED indicators, USB headers, audio headers to motherboard</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">5.3</span>
+                                    <div class="microstep-content">
+                                        <h5>Connect Data Cables</h5>
+                                        <p>SATA cables from drives to motherboard, check all fan connections</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">5.4</span>
+                                    <div class="microstep-content">
+                                        <h5>First Boot Test</h5>
+                                        <p>Connect monitor to GPU, power on, enter BIOS, enable XMP/DOCP, install OS</p>
+                                    </div>
+                                </div>
+                                <div class="microstep">
+                                    <span class="microstep-number">5.5</span>
+                                    <div class="microstep-content">
+                                        <h5>Final Setup</h5>
+                                        <p>Install drivers, update BIOS if needed, stress test system, cable management</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="premium-nav">
+        <div class="nav-container">
+            <a href="#cpus" class="nav-link">CPUs</a>
+            <a href="#gpus" class="nav-link">GPUs</a>
+            <a href="#memory" class="nav-link">Memory</a>
+            <a href="#storage" class="nav-link">Storage</a>
+            <a href="#cooling" class="nav-link">Cooling</a>
+            <a href="#bottleneck" class="nav-link">Performance</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- CPUs Section -->
+        <section id="cpus" class="component-section">
+            <div class="section-container">
+                <h2 class="section-title">CPUs (Processors)</h2>
+                <p class="section-description">The brain of your computer. Every instruction, every calculation, every decision flows through this silicon powerhouse. Understanding CPU specifications and naming is crucial for building a balanced system.</p>
+                
+                <!-- CPU Educational Overview -->
+                <div class="cpu-education">
+                    <div class="cpu-overview-intro">
+                        <h3>What Does a CPU Actually Do?</h3>
+                        <p>The Central Processing Unit (CPU) is literally the brain of your computer. It executes every single instruction your software needs - from basic math calculations to complex AI algorithms. When you click a button, open a file, or run a game, the CPU breaks down these tasks into billions of tiny operations and processes them at incredible speeds.</p>
+                    </div>
+
+                    <div class="cpu-deep-dive">
+                        <div class="cpu-architecture">
+                            <h4>🏗️ CPU Architecture Explained</h4>
+                            <div class="architecture-grid">
+                                <div class="arch-item">
+                                    <h5>Cores</h5>
+                                    <p>Think of cores as individual workers. Each core can handle one task at a time. Modern CPUs have 4-24+ cores, allowing multiple programs to run simultaneously without slowing each other down.</p>
+                                </div>
+                                <div class="arch-item">
+                                    <h5>Threads</h5>
+                                    <p>Hyperthreading/SMT technology lets each core pretend to be two cores. This means a 8-core CPU can appear as 16 threads to your operating system, improving multitasking performance.</p>
+                                </div>
+                                <div class="arch-item">
+                                    <h5>Clock Speed (GHz)</h5>
+                                    <p>How many operations per second each core can perform. Higher numbers = faster single-threaded performance. Modern CPUs boost from 3-5+ GHz depending on workload.</p>
+                                </div>
+                                <div class="arch-item">
+                                    <h5>Cache</h5>
+                                    <p>Super-fast memory built into the CPU. L1, L2, and L3 cache store frequently used data right next to the cores, dramatically reducing wait times for memory access.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CPU Naming Convention Breakdown -->
+                <div class="naming-breakdown">
+                    <h3>Decoding CPU Names: What Those Numbers Actually Mean</h3>
+                    
+                    <div class="brand-comparison">
+                        <div class="brand-section intel-section">
+                            <h4>Intel Naming System</h4>
+                            <div class="naming-example">
+                                <div class="name-parts">
+                                    <span class="brand-part">Intel Core</span>
+                                    <span class="tier-part">i9</span>
+                                    <span class="generation-part">14900</span>
+                                    <span class="suffix-part">K</span>
+                                </div>
+                                <div class="name-explanations">
+                                    <div class="explanation-item">
+                                        <h5>Tier (i3, i5, i7, i9)</h5>
+                                        <ul>
+                                            <li><strong>i3:</strong> Budget - 4 cores, basic gaming/office work</li>
+                                            <li><strong>i5:</strong> Mainstream - 6-10 cores, excellent gaming</li>
+                                            <li><strong>i7:</strong> High-end - 8-20 cores, gaming + content creation</li>
+                                            <li><strong>i9:</strong> Enthusiast - 16-24 cores, professional workstation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="explanation-item">
+                                        <h5>Generation + Model (14900)</h5>
+                                        <p><strong>14</strong> = 14th generation (Raptor Lake-S, 2023)<br>
+                                        <strong>900</strong> = Top-tier model within that generation<br>
+                                        Higher numbers = more cores, higher clocks, better performance</p>
+                                    </div>
+                                    <div class="explanation-item">
+                                        <h5>Suffix Letters</h5>
+                                        <ul>
+                                            <li><strong>K:</strong> Unlocked for overclocking, no integrated graphics</li>
+                                            <li><strong>KF:</strong> Unlocked + no integrated graphics (cheaper)</li>
+                                            <li><strong>F:</strong> No integrated graphics</li>
+                                            <li><strong>No suffix:</strong> Locked multiplier, includes integrated graphics</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="brand-section amd-section">
+                            <h4>AMD Naming System</h4>
+                            <div class="naming-example">
+                                <div class="name-parts">
+                                    <span class="brand-part">AMD Ryzen</span>
+                                    <span class="tier-part">7</span>
+                                    <span class="generation-part">7800</span>
+                                    <span class="suffix-part">X3D</span>
+                                </div>
+                                <div class="name-explanations">
+                                    <div class="explanation-item">
+                                        <h5>Tier (3, 5, 7, 9)</h5>
+                                        <ul>
+                                            <li><strong>Ryzen 3:</strong> Budget - 4-6 cores, entry-level gaming</li>
+                                            <li><strong>Ryzen 5:</strong> Mainstream - 6-8 cores, sweet spot for gaming</li>
+                                            <li><strong>Ryzen 7:</strong> High-end - 8-12 cores, gaming + productivity</li>
+                                            <li><strong>Ryzen 9:</strong> Enthusiast - 12-16 cores, content creation beast</li>
+                                        </ul>
+                                    </div>
+                                    <div class="explanation-item">
+                                        <h5>Generation + Model (7800)</h5>
+                                        <p><strong>7</strong> = 7000 series (Zen 4 architecture, 2022)<br>
+                                        <strong>800</strong> = 8-core model (700=8-core, 900=12-core, etc.)<br>
+                                        Architecture determines performance per core</p>
+                                    </div>
+                                    <div class="explanation-item">
+                                        <h5>Suffix Letters</h5>
+                                        <ul>
+                                            <li><strong>X3D:</strong> 3D V-Cache - Massive L3 cache for gaming</li>
+                                            <li><strong>X:</strong> Higher boost clocks, unlocked for overclocking</li>
+                                            <li><strong>G:</strong> Integrated graphics (APU)</li>
+                                            <li><strong>No suffix:</strong> Standard clocks, still overclockable</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance Comparison -->
+                <div class="cpu-performance">
+                    <h3>Gaming vs Productivity: What CPU Do You Need?</h3>
+                    <div class="performance-scenarios">
+                        <div class="scenario-card gaming-scenario">
+                            <h4>🎮 Gaming Performance</h4>
+                            <p><strong>What Matters:</strong> Single-core speed, 6-8 cores is plenty</p>
+                            <div class="recommendations">
+                                <div class="rec-item budget">
+                                    <span class="price-range">Budget ($150-250)</span>
+                                    <span class="cpu-rec">Ryzen 5 7600 / Intel i5-13400F</span>
+                                    <span class="performance">1080p gaming, 60-120+ FPS</span>
+                                </div>
+                                <div class="rec-item mid">
+                                    <span class="price-range">Mid-Range ($300-400)</span>
+                                    <span class="cpu-rec">Ryzen 7 7800X3D / Intel i7-14700K</span>
+                                    <span class="performance">1440p gaming, 120-165+ FPS</span>
+                                </div>
+                                <div class="rec-item high">
+                                    <span class="price-range">High-End ($400+)</span>
+                                    <span class="cpu-rec">Ryzen 9 7950X3D / Intel i9-14900K</span>
+                                    <span class="performance">4K gaming, 120+ FPS with high-end GPU</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scenario-card productivity-scenario">
+                            <h4>🎬 Content Creation & Productivity</h4>
+                            <p><strong>What Matters:</strong> Core count, multi-threading, large cache</p>
+                            <div class="task-breakdown">
+                                <div class="task-item">
+                                    <h5>Video Editing (4K/8K)</h5>
+                                    <p>12+ cores recommended. Ryzen 9 7950X or Intel i9-14900K excel here with 16+ cores handling timeline scrubbing, effects rendering, and background encoding.</p>
+                                </div>
+                                <div class="task-item">
+                                    <h5>3D Rendering & CAD</h5>
+                                    <p>More cores = faster renders. Threadripper Pro or Intel Xeon for professional work. Consumer CPUs: 16+ cores minimum for serious 3D work.</p>
+                                </div>
+                                <div class="task-item">
+                                    <h5>Programming & Development</h5>
+                                    <p>8-12 cores perfect for compilation, virtual machines, and running multiple development tools simultaneously. Fast single-core helps with IDE responsiveness.</p>
+                                </div>
+                                <div class="task-item">
+                                    <h5>Streaming While Gaming</h5>
+                                    <p>12+ cores ideal - 6-8 cores for the game, 4+ cores for encoding the stream. Hardware encoders (NVENC/AMF) can reduce CPU load significantly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example Cards with Enhanced Detail -->
+                <div class="examples-grid">
+                    <div class="example-card intel-card">
+                        <div class="example-title">
+                            <span>Intel Core</span>
+                            <div class="simple-naming">
+                                <h3>Intel Core i9-14900K</h3>
+                                <div class="simple-description">
+                                    <p><strong>Performance Tier (i9):</strong> High-end consumer series for enthusiasts, streamers, and content creators with 16-24 cores</p>
+                                    <p><strong>Generation (14900):</strong> 14th generation Raptor Lake-S with 8 P-cores + 16 E-cores, up to 6.0 GHz boost</p>
+                                    <p><strong>Suffix (K):</strong> Unlocked multiplier for overclocking, 125W base TDP, requires robust cooling</p>
+                                    <p><strong>Best For:</strong> Gaming + content creation, overclocking enthusiasts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">24 Cores</span>
+                                <span class="spec-value">8P + 16E</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">32 Threads</span>
+                                <span class="spec-value">P-Cores only</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Base Clock</span>
+                                <span class="spec-value">3.2 GHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Boost Clock</span>
+                                <span class="spec-value">6.0 GHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">TDP</span>
+                                <span class="spec-value">125W (253W)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">L3 Cache</span>
+                                <span class="spec-value">36MB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-card amd-card">
+                        <div class="example-title">
+                            <span>AMD Ryzen</span>
+                            <div class="simple-naming">
+                                <h3>AMD Ryzen 7 7800X3D</h3>
+                                <div class="simple-description">
+                                    <p><strong>Performance Tier (7):</strong> High-performance tier for gamers and enthusiasts with optimal price-to-performance</p>
+                                    <p><strong>Generation (7800):</strong> 7000 series Zen 4 architecture, 8 cores/16 threads, built on 5nm process</p>
+                                    <p><strong>Suffix (X3D):</strong> 3D V-Cache technology with 96MB L3 cache for exceptional gaming performance</p>
+                                    <p><strong>Best For:</strong> Ultimate gaming performance, 1440p/4K gaming</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">8 Cores</span>
+                                <span class="spec-value">All P-Cores</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">16 Threads</span>
+                                <span class="spec-value">SMT Enabled</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Base Clock</span>
+                                <span class="spec-value">4.2 GHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">L3 Cache</span>
+                                <span class="spec-value">96MB (3D V-Cache)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">TDP</span>
+                                <span class="spec-value">120W</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Max Boost</span>
+                                <span class="spec-value">5.0 GHz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CPU Selection Decision Matrix -->
+                <div class="cpu-decision">
+                    <h3>Which CPU Should You Choose?</h3>
+                    <div class="decision-matrix">
+                        <div class="matrix-scenario">
+                            <h4>💰 Budget Gaming Build ($600-1000 total)</h4>
+                            <div class="scenario-recommendation intel-rec">Intel i5-13400F or AMD Ryzen 5 7600</div>
+                            <p>6-8 cores provide excellent 1080p gaming performance. Put more budget toward GPU for better frame rates.</p>
+                        </div>
+                        <div class="matrix-scenario">
+                            <h4>🎮 Pure Gaming Focus ($1000-1500 total)</h4>
+                            <div class="scenario-recommendation amd-rec">AMD Ryzen 7 7800X3D</div>
+                            <p>Best gaming CPU available. 3D V-Cache provides 10-20% better gaming performance than any other CPU.</p>
+                        </div>
+                        <div class="matrix-scenario">
+                            <h4>🎬 Content Creation + Gaming ($1500-2500 total)</h4>
+                            <div class="scenario-recommendation intel-rec">Intel i7-14700K or AMD Ryzen 9 7950X</div>
+                            <p>More cores for video editing, streaming, and multitasking while maintaining excellent gaming performance.</p>
+                        </div>
+                        <div class="matrix-scenario">
+                            <h4>💼 Professional Workstation ($2500+ total)</h4>
+                            <div class="scenario-recommendation intel-rec">Intel i9-14900K or AMD Ryzen 9 7950X</div>
+                            <p>Maximum cores and threads for demanding professional workloads. Consider Threadripper for extreme needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GPUs Section -->
+        <section id="gpus" class="component-section">
+            <div class="section-container">
+                <h2 class="section-title">GPUs (Graphics Cards)</h2>
+                <p class="section-description">Transform data into stunning visuals. From ray-traced reflections to AI-accelerated rendering, your graphics card brings worlds to life and accelerates modern computing workloads.</p>
+                
+                <!-- GPU Educational Overview -->
+                <div class="gpu-education">
+                    <div class="gpu-overview-intro">
+                        <h3>What Does a GPU Actually Do?</h3>
+                        <p>Graphics Processing Units (GPUs) are specialized processors designed for parallel computation. While CPUs excel at complex sequential tasks, GPUs handle thousands of simple calculations simultaneously. Originally designed for rendering graphics, modern GPUs accelerate everything from gaming visuals to AI training, cryptocurrency mining, and video encoding.</p>
+                    </div>
+
+                    <div class="gpu-deep-dive">
+                        <div class="gpu-architecture">
+                            <h4>🎨 GPU Architecture Explained</h4>
+                            <div class="architecture-grid">
+                                <div class="arch-item">
+                                    <h5>CUDA/Stream Cores</h5>
+                                    <p>Hundreds to thousands of small processors that work in parallel. More cores = better performance for rendering, compute tasks, and higher resolutions. Think of them as a massive workforce handling simple tasks simultaneously.</p>
+                                </div>
+                                <div class="arch-item">
+                                    <h5>VRAM (Video Memory)</h5>
+                                    <p>Dedicated high-speed memory for textures, frame buffers, and game assets. More VRAM allows higher resolutions, better textures, and complex scenes without performance drops. Critical for 4K gaming and content creation.</p>
+                                </div>
+                                <div class="arch-item">
+                                    <h5>RT Cores (Ray Tracing)</h5>
+                                    <p>Specialized hardware for realistic lighting calculations. Ray tracing simulates how light actually behaves - reflections, shadows, and global illumination. Dramatically improves visual realism in supported games.</p>
+                                </div>
+                                <div class="arch-item">
+                                    <h5>Tensor Cores (AI)</h5>
+                                    <p>Accelerate machine learning and AI upscaling. DLSS/FSR use AI to render games at lower resolution then intelligently upscale, providing higher performance with minimal quality loss.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GPU Naming Convention Breakdown -->
+                <div class="gpu-naming-breakdown">
+                    <h3>Decoding GPU Names: Understanding the Model Numbers</h3>
+                    
+                    <div class="gpu-brand-comparison">
+                        <div class="gpu-brand-section nvidia-section">
+                            <h4>NVIDIA GeForce Naming</h4>
+                            <div class="gpu-naming-example">
+                                <div class="gpu-name-parts">
+                                    <span class="brand-part">NVIDIA GeForce</span>
+                                    <span class="tier-part">RTX</span>
+                                    <span class="generation-part">40</span>
+                                    <span class="model-part">80</span>
+                                    <span class="suffix-part">Super</span>
+                                </div>
+                                <div class="gpu-name-explanations">
+                                    <div class="explanation-item">
+                                        <h5>Product Line (GTX vs RTX)</h5>
+                                        <ul>
+                                            <li><strong>RTX:</strong> Ray tracing support, DLSS, latest features</li>
+                                            <li><strong>GTX:</strong> Older cards without ray tracing (discontinued)</li>
+                                            <li><strong>No prefix:</strong> Entry-level cards (GT 1030, etc.)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="explanation-item">
+                                        <h5>Generation (40, 30, 20, 16)</h5>
+                                        <p><strong>40-series:</strong> Ada Lovelace (2022) - Latest generation<br>
+                                        <strong>30-series:</strong> Ampere (2020) - Previous gen, still excellent<br>
+                                        <strong>20-series:</strong> Turing (2018) - First RTX cards<br>
+                                        Higher numbers = newer architecture, better efficiency</p>
+                                    </div>
+                                    <div class="explanation-item">
+                                        <h5>Performance Tier (50, 60, 70, 80, 90)</h5>
+                                        <ul>
+                                            <li><strong>90:</strong> Flagship - Ultimate 4K gaming, $1500+</li>
+                                            <li><strong>80:</strong> High-end - Excellent 4K, great 1440p, $800-1200</li>
+                                            <li><strong>70:</strong> Upper mid-range - Solid 1440p, entry 4K, $500-700</li>
+                                            <li><strong>60:</strong> Mid-range - Great 1080p, decent 1440p, $300-500</li>
+                                            <li><strong>50:</strong> Budget - Good 1080p, $200-350</li>
+                                        </ul>
+                                    </div>
+                                    <div class="explanation-item">
+                                        <h5>Suffixes</h5>
+                                        <ul>
+                                            <li><strong>Ti:</strong> Titanium - Faster version of base model</li>
+                                            <li><strong>Super:</strong> Refreshed model with better performance</li>
+                                            <li><strong>No suffix:</strong> Standard model</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gpu-brand-section amd-section">
+                            <h4>AMD Radeon Naming</h4>
+                            <div class="gpu-naming-example">
+                                <div class="gpu-name-parts">
+                                    <span class="brand-part">AMD Radeon</span>
+                                    <span class="tier-part">RX</span>
+                                    <span class="generation-part">7900</span>
+                                    <span class="suffix-part">XTX</span>
+                                </div>
+                                <div class="gpu-name-explanations">
+                                    <div class="explanation-item">
+                                        <h5>Product Line</h5>
+                                        <ul>
+                                            <li><strong>RX:</strong> Gaming cards with ray tracing support</li>
+                                            <li><strong>Radeon Pro:</strong> Professional workstation cards</li>
+                                            <li><strong>Instinct:</strong> Data center and AI cards</li>
+                                        </ul>
+                                    </div>
+                                    <div class="explanation-item">
+                                        <h5>Generation + Model (7900, 7800, 7700)</h5>
+                                        <p><strong>7000 series:</strong> RDNA 3 (2022) - Latest generation<br>
+                                        <strong>6000 series:</strong> RDNA 2 (2020) - Previous generation<br>
+                                        <strong>5000 series:</strong> RDNA 1 (2019) - Older generation<br>
+                                        Higher first digit = newer, higher last digits = more powerful</p>
+                                    </div>
+                                    <div class="explanation-item">
+                                        <h5>Performance Tiers</h5>
+                                        <ul>
+                                            <li><strong>7900:</strong> High-end - Competes with RTX 4080/4090</li>
+                                            <li><strong>7800:</strong> Upper mid-range - Competes with RTX 4070</li>
+                                            <li><strong>7700:</strong> Mid-range - Competes with RTX 4060 Ti</li>
+                                            <li><strong>7600:</strong> Budget - Competes with RTX 4060</li>
+                                        </ul>
+                                    </div>
+                                    <div class="explanation-item">
+                                        <h5>Suffixes</h5>
+                                        <ul>
+                                            <li><strong>XTX:</strong> Top tier model with maximum performance</li>
+                                            <li><strong>XT:</strong> High-performance model</li>
+                                            <li><strong>No suffix:</strong> Standard model</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GPU Performance Analysis -->
+                <div class="gpu-performance">
+                    <h3>Gaming Performance: Resolution and Settings Guide</h3>
+                    <div class="resolution-breakdown">
+                        <div class="resolution-card">
+                            <h4>🖥️ 1080p Gaming (1920×1080)</h4>
+                            <p><strong>Most Popular:</strong> 60% of Steam users, easiest to run, highest frame rates</p>
+                            <div class="gpu-recommendations">
+                                <div class="gpu-rec-item">
+                                    <span class="setting-level">High Settings, 60+ FPS</span>
+                                    <span class="recommended-gpus">RTX 4060, RX 7600, RTX 3060</span>
+                                    <span class="price-range">$250-350</span>
+                                </div>
+                                <div class="gpu-rec-item">
+                                    <span class="setting-level">Ultra Settings, 120+ FPS</span>
+                                    <span class="recommended-gpus">RTX 4070, RX 7700 XT</span>
+                                    <span class="price-range">$400-500</span>
+                                </div>
+                                <div class="gpu-rec-item">
+                                    <span class="setting-level">Competitive Gaming, 240+ FPS</span>
+                                    <span class="recommended-gpus">RTX 4080, RTX 4070 Ti</span>
+                                    <span class="price-range">$600-800</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resolution-card">
+                            <h4>🎮 1440p Gaming (2560×1440)</h4>
+                            <p><strong>Sweet Spot:</strong> Great balance of visual quality and performance, growing rapidly</p>
+                            <div class="gpu-recommendations">
+                                <div class="gpu-rec-item">
+                                    <span class="setting-level">High Settings, 60+ FPS</span>
+                                    <span class="recommended-gpus">RTX 4070, RX 7700 XT</span>
+                                    <span class="price-range">$450-550</span>
+                                </div>
+                                <div class="gpu-rec-item">
+                                    <span class="setting-level">Ultra Settings, 80+ FPS</span>
+                                    <span class="recommended-gpus">RTX 4070 Ti, RX 7800 XT</span>
+                                    <span class="price-range">$600-750</span>
+                                </div>
+                                <div class="gpu-rec-item">
+                                    <span class="setting-level">Ultra + Ray Tracing, 60+ FPS</span>
+                                    <span class="recommended-gpus">RTX 4080, RX 7900 XT</span>
+                                    <span class="price-range">$800-1000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resolution-card">
+                            <h4>🖼️ 4K Gaming (3840×2160)</h4>
+                            <p><strong>Premium Experience:</strong> Incredible detail, requires high-end hardware</p>
+                            <div class="gpu-recommendations">
+                                <div class="gpu-rec-item">
+                                    <span class="setting-level">High Settings, 60 FPS</span>
+                                    <span class="recommended-gpus">RTX 4080, RX 7900 XT</span>
+                                    <span class="price-range">$800-1000</span>
+                                </div>
+                                <div class="gpu-rec-item">
+                                    <span class="setting-level">Ultra Settings, 60+ FPS</span>
+                                    <span class="recommended-gpus">RTX 4090, RX 7900 XTX</span>
+                                    <span class="price-range">$1000-1600</span>
+                                </div>
+                                <div class="gpu-rec-item">
+                                    <span class="setting-level">Ultra + Ray Tracing</span>
+                                    <span class="recommended-gpus">RTX 4090 (Only viable option)</span>
+                                    <span class="price-range">$1500-1800</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ray Tracing vs Rasterization -->
+                <div class="rendering-technology">
+                    <h3>Ray Tracing vs Traditional Rendering: What's the Difference?</h3>
+                    <div class="tech-comparison">
+                        <div class="tech-method rasterization">
+                            <h4>🔢 Rasterization (Traditional)</h4>
+                            <div class="tech-explanation">
+                                <p><strong>How it works:</strong> Uses mathematical tricks and pre-calculated lighting. Faster but less realistic.</p>
+                                <div class="tech-pros-cons">
+                                    <div class="pros">
+                                        <h5>✅ Advantages</h5>
+                                        <ul>
+                                            <li>Very fast performance</li>
+                                            <li>Works on all GPUs</li>
+                                            <li>Mature optimization</li>
+                                            <li>Lower hardware requirements</li>
+                                        </ul>
+                                    </div>
+                                    <div class="cons">
+                                        <h5>❌ Limitations</h5>
+                                        <ul>
+                                            <li>Fake reflections and shadows</li>
+                                            <li>Less realistic lighting</li>
+                                            <li>Screen-space limitations</li>
+                                            <li>Requires lighting artists</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-method raytracing">
+                            <h4>✨ Ray Tracing (Realistic)</h4>
+                            <div class="tech-explanation">
+                                <p><strong>How it works:</strong> Simulates actual light physics by tracing light rays. More realistic but computationally expensive.</p>
+                                <div class="tech-pros-cons">
+                                    <div class="pros">
+                                        <h5>✅ Advantages</h5>
+                                        <ul>
+                                            <li>Physically accurate lighting</li>
+                                            <li>Perfect reflections and shadows</li>
+                                            <li>Global illumination</li>
+                                            <li>Future-proof rendering method</li>
+                                        </ul>
+                                    </div>
+                                    <div class="cons">
+                                        <h5>❌ Limitations</h5>
+                                        <ul>
+                                            <li>Requires RTX/RDNA 2+ GPUs</li>
+                                            <li>50-70% performance impact</li>
+                                            <li>Limited game support</li>
+                                            <li>Still evolving technology</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enhanced Example Cards -->
+                <div class="examples-grid">
+                    <div class="example-card nvidia-card">
+                        <div class="example-title">
+                            <span>NVIDIA GeForce</span>
+                            <div class="simple-naming">
+                                <h3>NVIDIA GeForce RTX 4080</h3>
+                                <div class="simple-description">
+                                    <p><strong>Product Tier (RTX):</strong> Ray tracing and DLSS enabled graphics cards with advanced AI upscaling</p>
+                                    <p><strong>Generation (40):</strong> Ada Lovelace architecture on TSMC 4nm with 2x efficiency vs 30-series</p>
+                                    <p><strong>Performance Tier (80):</strong> High-end tier for 1440p ultra and excellent 4K gaming performance</p>
+                                    <p><strong>Best For:</strong> 1440p ultra settings, 4K gaming, ray tracing, content creation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">VRAM</span>
+                                <span class="spec-value">16GB GDDR6X</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">CUDA Cores</span>
+                                <span class="spec-value">9,728</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">RT Cores</span>
+                                <span class="spec-value">76 Gen 3</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Tensor Cores</span>
+                                <span class="spec-value">304 Gen 4</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Base Clock</span>
+                                <span class="spec-value">2205 MHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Memory Bandwidth</span>
+                                <span class="spec-value">716 GB/s</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-card amd-card">
+                        <div class="example-title">
+                            <span>AMD Radeon</span>
+                            <div class="simple-naming">
+                                <h3>AMD Radeon RX 7900 XTX</h3>
+                                <div class="simple-description">
+                                    <p><strong>Product Tier (RX):</strong> Gaming series optimized for high-performance gaming with excellent rasterization</p>
+                                    <p><strong>Generation (7900):</strong> RDNA 3 chiplet design on TSMC 5nm with 54% better power efficiency</p>
+                                    <p><strong>Performance Tier (XTX):</strong> AMD's flagship gaming GPU with 24GB VRAM for future-proofing</p>
+                                    <p><strong>Best For:</strong> High-performance gaming, 1440p ultra, 4K high settings, content creation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">VRAM</span>
+                                <span class="spec-value">24GB GDDR6</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Stream Processors</span>
+                                <span class="spec-value">6,144</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Ray Accelerators</span>
+                                <span class="spec-value">96</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Memory Bandwidth</span>
+                                <span class="spec-value">960 GB/s</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Game Clock</span>
+                                <span class="spec-value">2300 MHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">TBP</span>
+                                <span class="spec-value">355W</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GPU Selection Decision Guide -->
+                <div class="gpu-decision">
+                    <h3>Which GPU Should You Choose?</h3>
+                    <div class="gpu-decision-matrix">
+                        <div class="gpu-matrix-scenario">
+                            <h4>💰 Budget Gaming (1080p, $200-400)</h4>
+                            <div class="gpu-scenario-recommendation nvidia-rec">RTX 4060 or RX 7600</div>
+                            <p>Excellent 1080p performance with high/ultra settings. DLSS/FSR support extends card lifespan. Skip RTX 3060 unless significantly cheaper.</p>
+                        </div>
+                        <div class="gpu-matrix-scenario">
+                            <h4>🎮 Mainstream Gaming (1440p, $400-700)</h4>
+                            <div class="gpu-scenario-recommendation amd-rec">RX 7700 XT or RTX 4070</div>
+                            <p>Perfect for 1440p gaming. RX 7700 XT offers better rasterization, RTX 4070 has superior ray tracing and DLSS. Choose based on game preferences.</p>
+                        </div>
+                        <div class="gpu-matrix-scenario">
+                            <h4>🖼️ High-End Gaming (1440p/4K, $700-1200)</h4>
+                            <div class="gpu-scenario-recommendation nvidia-rec">RTX 4080 or RX 7900 XTX</div>
+                            <p>4K capable with compromises, excellent 1440p with ray tracing. RTX 4080 for ray tracing priority, RX 7900 XTX for pure rasterization performance.</p>
+                        </div>
+                        <div class="gpu-matrix-scenario">
+                            <h4>👑 Enthusiast Gaming (4K Ultra, $1200+)</h4>
+                            <div class="gpu-scenario-recommendation nvidia-rec">RTX 4090</div>
+                            <p>Only GPU capable of consistent 4K Ultra with ray tracing. Massive overkill for 1440p but future-proof investment. Consider waiting for next generation.</p>
+                        </div>
+                        <div class="gpu-matrix-scenario">
+                            <h4>🎬 Content Creation Focus</h4>
+                            <div class="gpu-scenario-recommendation amd-rec">RX 7900 XTX (24GB VRAM)</div>
+                            <p>More VRAM benefits video editing, 3D rendering, and AI workloads. NVIDIA better for streaming (NVENC) and AI acceleration (CUDA). Choose based on workflow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory Section -->
+        <section id="memory" class="component-section">
+            <div class="section-container">
+                <h2 class="section-title">Memory</h2>
+                <p class="section-description">Your system's short-term memory. Fast, responsive RAM keeps your applications running smoothly and your system feeling snappy.</p>
+                
+                <div class="examples-grid">
+                    <div class="example-card memory-card">
+                        <div class="example-title">
+                            <span>High-Performance Memory</span>
+                            <div class="simple-naming">
+                                <h3>32GB DDR5-6000 CL36</h3>
+                                <div class="simple-description">
+                                    <p><strong>32GB Capacity:</strong> Excellent headroom for gaming, multitasking, and content creation</p>
+                                    <p><strong>DDR5:</strong> Latest memory standard with ~50% higher bandwidth than DDR4</p>
+                                    <p><strong>6000MHz:</strong> Optimal speed for AMD Ryzen 7000 and Intel 12th+ gen processors</p>
+                                    <p><strong>CL36 Timings:</strong> Good balance between speed and latency (~12ns)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Storage Section -->
+        <section id="storage" class="component-section">
+            <div class="section-container">
+                <h2 class="section-title">Storage</h2>
+                <p class="section-description">Where your digital life lives. From lightning-fast SSDs to massive storage arrays, choose the foundation for your data.</p>
+                
+                <div class="examples-grid">
+                    <div class="example-card storage-card">
+                        <div class="example-title">
+                            <span>High-Speed Storage</span>
+                            <div class="simple-naming">
+                                <h3>2TB NVMe Gen4 M.2</h3>
+                                <div class="simple-description">
+                                    <p><strong>2TB Capacity:</strong> Ample space for 15-20 modern AAA games plus OS and applications</p>
+                                    <p><strong>NVMe Interface:</strong> 5-10x faster than SATA SSDs with ultra-low latency</p>
+                                    <p><strong>Gen4 Speed:</strong> Up to 7GB/s sequential read speeds for rapid file transfers</p>
+                                    <p><strong>M.2 Form Factor:</strong> Compact design that connects directly to motherboard</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cooling Section -->
+        <section id="cooling" class="component-section">
+            <div class="section-container">
+                <h2 class="section-title">Cooling</h2>
+                <p class="section-description">Keep your components running cool and quiet. From whisper-silent air coolers to high-performance liquid cooling systems.</p>
+                
+                <div class="cooling-comparison">
+                    <div class="cooling-type air-cooling">
+                        <div class="cooling-header">
+                            <div class="cooling-icon">🌪️</div>
+                            <h3>Air Cooling</h3>
+                            <p class="cooling-subtitle">Reliable, Affordable, Time-Tested</p>
+                        </div>
+
+                        <div class="cooling-specs">
+                            <h4>How It Works</h4>
+                            <p>Heat pipes transfer heat from CPU to aluminum fins. Fans blow air through fins to dissipate heat. Simple, reliable, and effective for most users.</p>
+                            
+                            <div class="spec-list">
+                                <div class="spec-category">
+                                    <h5>✅ Advantages</h5>
+                                    <ul>
+                                        <li><strong>Cost Effective:</strong> $25-100 for excellent cooling</li>
+                                        <li><strong>Reliability:</strong> No pumps to fail, fans last 10+ years</li>
+                                        <li><strong>Easy Installation:</strong> Mount and connect single cable</li>
+                                        <li><strong>No Maintenance:</strong> Set and forget operation</li>
+                                        <li><strong>No Leak Risk:</strong> Completely safe for components</li>
+                                        <li><strong>Immediate Performance:</strong> No warm-up time needed</li>
+                                    </ul>
+                                </div>
+
+                                <div class="spec-category">
+                                    <h5>❌ Disadvantages</h5>
+                                    <ul>
+                                        <li><strong>Size:</strong> Large coolers can block RAM slots</li>
+                                        <li><strong>Noise Under Load:</strong> Fans spin faster when hot</li>
+                                        <li><strong>Thermal Limits:</strong> Less effective for extreme overclocking</li>
+                                        <li><strong>Aesthetics:</strong> Can look bulky in windowed cases</li>
+                                        <li><strong>Case Clearance:</strong> Height restrictions in some cases</li>
+                                        <li><strong>Directional Airflow:</strong> Requires proper case ventilation</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="performance-metrics">
+                                <div class="metric">
+                                    <span class="metric-label">Typical CPU Temps</span>
+                                    <span class="metric-value">65-80°C</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">Noise Level</span>
+                                    <span class="metric-value">30-45 dBA</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">Installation Time</span>
+                                    <span class="metric-value">10-20 minutes</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">Maintenance</span>
+                                    <span class="metric-value">Dust cleaning every 6 months</span>
+                                </div>
+                            </div>
+
+                            <div class="recommended-models">
+                                <h5>Top Air Coolers</h5>
+                                <div class="model-list">
+                                    <div class="model-item">
+                                        <span class="model-name">Noctua NH-D15</span>
+                                        <span class="model-price">$100</span>
+                                        <span class="model-performance">Premium Performance</span>
+                                    </div>
+                                    <div class="model-item">
+                                        <span class="model-name">Thermalright Peerless Assassin</span>
+                                        <span class="model-price">$35</span>
+                                        <span class="model-performance">Best Value</span>
+                                    </div>
+                                    <div class="model-item">
+                                        <span class="model-name">be quiet! Dark Rock Pro 4</span>
+                                        <span class="model-price">$90</span>
+                                        <span class="model-performance">Silent Operation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cooling-type liquid-cooling">
+                        <div class="cooling-header">
+                            <div class="cooling-icon">💧</div>
+                            <h3>Liquid Cooling (AIO)</h3>
+                            <p class="cooling-subtitle">Modern, Efficient, Premium Performance</p>
+                        </div>
+
+                        <div class="cooling-specs">
+                            <h4>How It Works</h4>
+                            <p>Pump circulates coolant between CPU block and radiator. Fans on radiator dissipate heat from liquid. More efficient heat transfer than air.</p>
+                            
+                            <div class="spec-list">
+                                <div class="spec-category">
+                                    <h5>✅ Advantages</h5>
+                                    <ul>
+                                        <li><strong>Better Cooling:</strong> 5-20°C lower temperatures</li>
+                                        <li><strong>Quieter Under Load:</strong> Larger, slower fans</li>
+                                        <li><strong>Compact CPU Area:</strong> No large heatsink blocking RAM</li>
+                                        <li><strong>Premium Aesthetics:</strong> Clean look with RGB options</li>
+                                        <li><strong>Better for Overclocking:</strong> Higher thermal headroom</li>
+                                        <li><strong>Consistent Performance:</strong> Better thermal mass</li>
+                                    </ul>
+                                </div>
+
+                                <div class="spec-category">
+                                    <h5>❌ Disadvantages</h5>
+                                    <ul>
+                                        <li><strong>Higher Cost:</strong> 2-4x more expensive than air</li>
+                                        <li><strong>Leak Risk:</strong> Rare but catastrophic if it happens</li>
+                                        <li><strong>Complex Installation:</strong> Mounting, routing, multiple cables</li>
+                                        <li><strong>Pump Failure:</strong> Additional failure point (5-7 year lifespan)</li>
+                                        <li><strong>Space Requirements:</strong> Need radiator mounting space</li>
+                                        <li><strong>More Maintenance:</strong> Check for leaks, pump noise</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="performance-metrics">
+                                <div class="metric">
+                                    <span class="metric-label">Typical CPU Temps</span>
+                                    <span class="metric-value">50-70°C</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">Noise Level</span>
+                                    <span class="metric-value">25-35 dBA</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">Installation Time</span>
+                                    <span class="metric-value">30-60 minutes</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">Maintenance</span>
+                                    <span class="metric-value">Monitor pump health quarterly</span>
+                                </div>
+                            </div>
+
+                            <div class="recommended-models">
+                                <h5>Top AIO Coolers</h5>
+                                <div class="model-list">
+                                    <div class="model-item">
+                                        <span class="model-name">Arctic Liquid Freezer II 280</span>
+                                        <span class="model-price">$120</span>
+                                        <span class="model-performance">Best Performance/Price</span>
+                                    </div>
+                                    <div class="model-item">
+                                        <span class="model-name">Corsair H150i Elite</span>
+                                        <span class="model-price">$180</span>
+                                        <span class="model-performance">Premium RGB</span>
+                                    </div>
+                                    <div class="model-item">
+                                        <span class="model-name">NZXT Kraken X63</span>
+                                        <span class="model-price">$150</span>
+                                        <span class="model-performance">LCD Display</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision Matrix -->
+                <div class="cooling-decision">
+                    <h3>Which Cooling Solution is Right for You?</h3>
+                    <div class="decision-scenarios">
+                        <div class="scenario">
+                            <div class="scenario-header">
+                                <h4>🎯 Budget Build ($500-1000)</h4>
+                                <div class="recommendation air-rec">Air Cooling Recommended</div>
+                            </div>
+                            <p>Save money for better CPU/GPU. Modern air coolers handle all but extreme overclocking scenarios effectively.</p>
+                        </div>
+
+                        <div class="scenario">
+                            <div class="scenario-header">
+                                <h4>🎮 Gaming Build ($1000-2000)</h4>
+                                <div class="recommendation either-rec">Either Option Works</div>
+                            </div>
+                            <p>Choose based on noise preference and aesthetics. Both will keep gaming CPUs cool enough for optimal performance.</p>
+                        </div>
+
+                        <div class="scenario">
+                            <div class="scenario-header">
+                                <h4>🔥 High-End/Overclocking ($2000+)</h4>
+                                <div class="recommendation liquid-rec">Liquid Cooling Recommended</div>
+                            </div>
+                            <p>Better temps for sustained overclocks, quieter operation, and premium aesthetics worth the investment.</p>
+                        </div>
+
+                        <div class="scenario">
+                            <div class="scenario-header">
+                                <h4>🤐 Silent Computing</h4>
+                                <div class="recommendation liquid-rec">Liquid Cooling Recommended</div>
+                            </div>
+                            <p>240mm+ AIOs run much quieter under load due to larger, slower-spinning fans and better heat dissipation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Deep Dive -->
+                <div class="cooling-technical">
+                    <h3>Technical Considerations</h3>
+                    <div class="technical-grid">
+                        <div class="technical-item">
+                            <h4>Thermal Resistance</h4>
+                            <p>Air cooling typically has 0.3-0.5°C/W thermal resistance, while quality AIOs achieve 0.2-0.3°C/W, meaning better heat transfer efficiency.</p>
+                        </div>
+                        <div class="technical-item">
+                            <h4>Thermal Mass</h4>
+                            <p>Liquid cooling systems have higher thermal mass, providing more stable temperatures during short bursts of high CPU load.</p>
+                        </div>
+                        <div class="technical-item">
+                            <h4>Noise Curves</h4>
+                            <p>Air coolers get dramatically louder under load, while AIOs maintain relatively consistent noise levels due to better heat dissipation.</p>
+                        </div>
+                        <div class="technical-item">
+                            <h4>Pump vs Fan Longevity</h4>
+                            <p>Quality fans last 10+ years, while AIO pumps typically last 5-7 years. Factor replacement costs into long-term planning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Analysis Section -->
+        <section id="bottleneck" class="bottleneck-section">
+            <div class="section-container">
+                <h2 class="section-title">Performance Analysis</h2>
+                <p class="section-description">Use this external bottleneck calculator to analyze CPU and GPU compatibility:</p>
+                
+                <div class="external-link-container">
+                    <a href="https://pc-builds.com/bottleneck-calculator/" target="_blank" class="external-link">
+                        https://pc-builds.com/bottleneck-calculator/
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Tooltip Container -->
+    <div id="tooltip" class="premium-tooltip">
+        <div class="tooltip-content"></div>
+        <div class="tooltip-arrow"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
